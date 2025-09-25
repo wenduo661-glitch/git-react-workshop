@@ -4,7 +4,7 @@
 
 Firstly, we will set up git on our laptop.
 
-1. Install Git from [Link Text](git-scm.com)
+1. Install Git from git-scm.com
 
 2. Configure your user info so commits have your name and email:
 
