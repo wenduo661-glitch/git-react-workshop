@@ -8,20 +8,20 @@
 
 Please make sure you replace your username in the URL below.
 
-'''
+```
 git clone https://github.com/YOUR_USERNAME/git-workship.git
-'''
+```
 
 4. Change to your clone directory
 
-'''
+```
 cd git-workshop
-'''
+```
 
 5. Stage, Commit & Push
 
-'''
+```
 git add hello.txt
 git commit -m "Initial Commit"
 git push
-''
+```
