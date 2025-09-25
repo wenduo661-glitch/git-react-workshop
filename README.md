@@ -99,11 +99,22 @@ git push
     git branch
     ```
     
-    Create a new branch:
+    Create a new branch (working directory):
    ``` git branch <branch-name>```
 
     Switch to a branch:
     ```git checkout <branch-name>```
 
+    Add the branch to github:
+    ```
+    git push --set-upstream origin <branch-name>
+    ```
+
+9. Merging branches
+
+In order to merge a branch, checkout to the directory in which you want to merge <branch-name> and run the command.
+
     Merge a branch into current branch:
     ```git merge <branch-name>```
+
+This opens a file in which you can make changes to the commit message. Once you close the file, a merge request is created. The continue with pushing to see changes on github.
