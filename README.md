@@ -79,6 +79,7 @@ git push
     ```
     git log
     ```
+    To quit, press 'q'
 
     Unstage a file but keep changes:
 
@@ -87,7 +88,7 @@ git push
     ```
 
     Discard changes in working directory (use carefully):
-    
+
     ```
     git checkout -- <file>
     ```
