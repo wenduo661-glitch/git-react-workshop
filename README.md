@@ -18,13 +18,19 @@ git clone https://github.com/YOUR_USERNAME/git-workship.git
 cd git-workshop
 ```
 
-5. Check the status of your git repository
+5. Open your repo to make changes.
+
+```
+code .
+```
+
+6. Check the status of your git repository
 
 ```
 git status
 ```
 
-6. Stage, Commit & Push
+7. Stage, Commit & Push
 
 ```
 git add hello.txt
