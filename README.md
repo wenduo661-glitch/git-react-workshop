@@ -92,3 +92,18 @@ git push
     ```
     git checkout -- <file>
     ```
+
+9. Branches let you work on features independently.
+    List branches:
+    ```
+    git branch
+    ```
+    
+    Create a new branch:
+   ``` git branch <branch-name>```
+
+    Switch to a branch:
+    ```git checkout <branch-name>```
+
+    Merge a branch into current branch:
+    ```git merge <branch-name>```
