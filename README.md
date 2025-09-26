@@ -36,7 +36,7 @@ There are two ways you can create your first repository.
 
 Start from scratch by creating a repo on github and clone it.
 
-    g```git clone```
+    ```git clone```
 
 
 ## Exercise
