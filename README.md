@@ -1,8 +1,11 @@
 # WICS Git + ReactJS Workshop
 
-## GIT
+Welcome to the workshop!
+Follow along to get started :)
 
-### SETUP
+# GIT
+
+## SETUP
 
 Firstly, we will set up git on our laptop.
 
@@ -22,7 +25,7 @@ Firstly, we will set up git on our laptop.
     ```
 
 
-### Your first repository:
+## Your first repository:
 
 There are two ways you can create your first repository.
     - Convert your existing folder on your machine into a git repo.
@@ -37,7 +40,7 @@ Start from scratch by creating a repo on github and clone it.
     git clone
     ```
 
-### Exercise
+## Exercise
 
 1. Fork this repository to your github account.
 
@@ -124,9 +127,9 @@ Start from scratch by creating a repo on github and clone it.
 
     This opens a file in which you can make changes to the commit message. Once you close the file, a merge request is created. The continue with pushing to see changes on github.
 
-## REACT JS
+# REACT JS
 
-### SETUP
+## SETUP
 
 1. Download Node.js from https://nodejs.org/en/download
 
@@ -152,7 +155,7 @@ Start from scratch by creating a repo on github and clone it.
     /node-modules
     ```
 
-### Basics of React Js
+## Basics of React Js
 
 1. JSX – React Syntax
 
