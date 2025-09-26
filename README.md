@@ -9,7 +9,7 @@ Follow along to get started :)
 
 Firstly, we will set up git on our laptop.
 
-1. Install Git from git-scm.com
+1. Install Git from [git-scm.com](https://git-scm.com/)
 
 2. Configure your user info so commits have your name and email:
 
@@ -131,7 +131,7 @@ Start from scratch by creating a repo on github and clone it.
 
 ## SETUP
 
-1. Download Node.js from https://nodejs.org/en/download
+1. Download Node.js from [Nodejs]https://nodejs.org/en/download
 
     Run the following commands:
 
