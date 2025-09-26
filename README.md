@@ -131,7 +131,7 @@ Start from scratch by creating a repo on github and clone it.
 
 ## SETUP
 
-1. Download Node.js from [Nodejs]https://nodejs.org/en/download
+1. Download Node.js from [Nodejs](https://nodejs.org/en/download)
 
     Run the following commands:
 
