@@ -30,15 +30,14 @@ Firstly, we will set up git on our laptop.
 There are two ways you can create your first repository.
     - Convert your existing folder on your machine into a git repo.
 
-    ```
-    git init
-    ```
+
+    ```git init```
+
 
 Start from scratch by creating a repo on github and clone it.
 
-    ``` 
-    git clone
-    ```
+    g```git clone```
+
 
 ## Exercise
 
