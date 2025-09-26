@@ -175,8 +175,3 @@ function Counter() {
   );
 }
 ```
-
----
-
-## Feedback
-Please share your feedback to help us improve future workshops!
