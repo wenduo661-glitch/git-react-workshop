@@ -10,16 +10,16 @@ Firstly, we will set up git on our laptop.
 
 2. Configure your user info so commits have your name and email:
 
-```
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-```
+    ```
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+    ```
 
 3. Enable nice colored output for easier reading:
 
-```
-git config --global color.ui auto
-```
+    ```
+    git config --global color.ui auto
+    ```
 
 
 ## Your first repository:
@@ -45,37 +45,38 @@ Start from scratch by creating a repo on github and clone it.
 
     Please make sure you replace your username in the URL below.
 
-```
-git clone https://github.com/YOUR_USERNAME/git-workship.git
-```
+    ```
+    git clone https://github.com/YOUR_USERNAME/git-workship.git
+    ```
 
 4. Change to your clone directory
 
-```
-cd git-workshop
-```
+    ```
+    cd git-workshop
+    ```
 
 5. Open your repo to make changes.
 
-```
-code .
-```
+    ```
+    code .
+    ```
 
 6. Check the status of your git repository
 
-```
-git status
-```
+    ```
+    git status
+    ```
 
 7. Stage, Commit & Push
 
-```
-git add hello.txt
-git commit -m "Initial Commit"
-git push
-```
+    ```
+    git add hello.txt
+    git commit -m "Initial Commit"
+    git push
+    ```
 
 8. Undoing & Viewing History
+
     View commit history:
 
     ```
@@ -96,13 +97,14 @@ git push
     ```
 
 9. Branches let you work on features independently.
+
     List branches:
     ```
     git branch
     ```
-    
+
     Create a new branch (working directory):
-   ``` git branch <branch-name>```
+    ``` git branch <branch-name>```
 
     Switch to a branch:
     ```git checkout <branch-name>```
@@ -112,15 +114,15 @@ git push
     git push --set-upstream origin <branch-name>
     ```
 
-9. Merging branches
+10. Merging branches
 
-In order to merge a branch, checkout to the directory in which you want to merge <branch-name> and run the command.
+    In order to merge a branch, checkout to the directory in which you want to merge <branch-name> and run the command.
 
     ```
     git merge <branch-name>
     ```
 
-This opens a file in which you can make changes to the commit message. Once you close the file, a merge request is created. The continue with pushing to see changes on github.
+    This opens a file in which you can make changes to the commit message. Once you close the file, a merge request is created. The continue with pushing to see changes on github.
 
 ## REACT JS
 
@@ -128,62 +130,66 @@ This opens a file in which you can make changes to the commit message. Once you 
 
 1. Download Node.js from https://nodejs.org/en/download
 
-Run the following commands:
+    Run the following commands:
 
-```
-npm create vite@latest my-app --template react
-cd my-app
-```
+    ```
+    npm create vite@latest my-app --template react
+    cd my-app
+    ```
 
-After you do this, I want you to create your github repository for storing this project. (HINT: use ```git init```)
+    After you do this, I want you to create your github repository for storing this project. (HINT: use ```git init```)
 
-```
-npm install
-npm run dev
-```
+    ```
+    npm install
+    npm run dev
+    ```
 
-Create a .gitignore file
+    Create a .gitignore file
 
-And write /node-modules
+    And write
+    
+    ```
+    /node-modules
+    ```
 
 ### Basics of React Js
 
 1. JSX – React Syntax
 
-JSX looks like HTML but is JavaScript:
+    JSX looks like HTML but is JavaScript:
 
-```
-const element = <h1>Hello, world!</h1>;
-```
+    ```
+    const element = <h1>Hello, world!</h1>;
+    ```
 
-Embed JS expressions with {}:
+    Embed JS expressions with {}:
 
-```
-<p>
-{user.name}
-</p>
-```
+    ```
+    <p>
+    {user.name}
+    </p>
+    ```
 
-Render lists with .map():
-```
-# This is the list
-const items = ['Apple', 'Banana'];
+    Render lists with .map():
+    ```
+    # This is the list
+    const items = ['Apple', 'Banana'];
 
-# Printing like an unordered list.
-<ul>
-  {items.map(item => <li key={item}>{item}</li>)}
-</ul>
-```
+    # Printing like an unordered list.
+    <ul>
+    {items.map(item => <li key={item}>{item}</li>)}
+    </ul>
+    ```
 
 2. Components
 
    Components are JavaScript functions that return JSX:
-   
-```
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-```
+    
+    ```
+    function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+    }
+    ```
 
-props are inputs for components (like function arguments).
+    props are inputs for components (like function arguments).
 
