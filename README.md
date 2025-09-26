@@ -1,197 +1,182 @@
-# WICS Git + ReactJS Workshop
+# Git & React Workshop
 
-Welcome to the workshop!
-Follow along to get started :)
+Welcome to the **Git & React Workshop**! This README will guide you through the essential steps for using Git and starting a React.js project. Follow along to set up your environment, manage your code, and build your first React app.
 
-# GIT
+---
 
-## SETUP
+## Table of Contents
+- [Git Basics](#git-basics)
+- [GitHub Overview](#github-overview)
+- [Git Setup](#git-setup)
+- [Working with Git](#working-with-git)
+- [Branching in Git](#branching-in-git)
+- [React.js Introduction](#reactjs-introduction)
+- [Node.js Check](#nodejs-check)
+- [Setting Up a React Project](#setting-up-a-react-project)
+- [React Concepts](#react-concepts)
+- [Feedback](#feedback)
 
-Firstly, we will set up git on our laptop.
+---
 
-1. Install Git from [git-scm.com](https://git-scm.com/)
+## Git Basics
+Git is a **version control system** that tracks and manages changes to files over time.  
+It uses **repositories** to store your project files and their entire change history, making collaboration easy.
 
-2. Configure your user info so commits have your name and email:
+---
 
-    ```
-    git config --global user.name "Your Name"
-    git config --global user.email "your.email@example.com"
-    ```
+## GitHub Overview
+GitHub is a **web-based platform** for hosting your Git repositories.  
+It allows you to store code online, collaborate, track issues, and showcase your projects.
 
-3. Enable nice colored output for easier reading:
+---
 
-    ```
-    git config --global color.ui auto
-    ```
+## Git Setup
+1. **Install Git**  
+   Download from [git-scm.com](https://git-scm.com).
 
-
-## Your first repository:
-
-There are two ways you can create your first repository.
-    Convert your existing folder on your machine into a git repo.
+2. **Configure your user info**
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@eg.com"
+git config --global color.ui auto
 ```
-    git init
+
+---
+
+## Working with Git
+- **Initialize a repository**
+```bash
+git init
 ```
 
-Start from scratch by creating a repo on github and clone it.
-
+- **Clone a repository**
+```bash
+git clone https://github.com/YOUR_USERNAME/repo.git
 ```
-    git clone
+
+- **Stage, commit, and push changes**
+```bash
+git add sayhello.txt
+git commit -m "Initial Commit"
+git push
 ```
-    
-## Exercise
 
-1. Fork this repository to your github account.
+- **Check status and history**
+```bash
+git status
+git log
+```
 
-2. Clone your _forked_ repository on your vscode
+---
 
-    Please make sure you replace your username in the URL below.
+## Branching in Git
+- **List branches**
+```bash
+git branch
+```
 
-    ```
-    git clone https://github.com/YOUR_USERNAME/git-workship.git
-    ```
+- **Create a new branch**
+```bash
+git branch <branch-name>
+```
 
-4. Change to your clone directory
+- **Switch branches**
+```bash
+git checkout <branch-name>
+```
 
-    ```
-    cd git-workshop
-    ```
+- **Push a branch to remote**
+```bash
+git push --set-upstream origin <branch-name>
+```
 
-5. Open your repo to make changes.
+- **Merge branches**
+```bash
+git merge <feature-branch-name>
+```
 
-    ```
-    code .
-    ```
+---
 
-6. Check the status of your git repository
+## React.js Introduction
+React.js is a **JavaScript library** for building dynamic user interfaces using **reusable components**, **state**, and **props**.
 
-    ```
-    git status
-    ```
+### Why React?
+- Fast & efficient  
+- Reusable code  
+- Easier interactivity
 
-7. Stage, Commit & Push
+---
 
-    ```
-    git add hello.txt
-    git commit -m "Initial Commit"
-    git push
-    ```
+## Node.js Check
+Before starting with React, make sure you have **Node.js installed**:
+```bash
+node -v
+```
 
-8. Undoing & Viewing History
+If not installed, download from [nodejs.org](https://nodejs.org).
 
-    View commit history:
+---
 
-    ```
-    git log
-    ```
-    To quit, press 'q'
+## Setting Up a React Project
+1. **Create a new React project using Vite**
+```bash
+npm create vite@latest myweb --template react
+cd myweb
+```
 
-    Unstage a file but keep changes:
+---
 
-    ```
-    git reset <file>
-    ```
+## React Concepts
 
-    Discard changes in working directory (use carefully):
+### JSX Example
+```jsx
+const element = <h1>Hello, world!</h1>;
+```
 
-    ```
-    git checkout -- <file>
-    ```
+### Component Example
+```jsx
+function Welcome(props) {
+  return (
+    <h1>Hello, {props.name}</h1>
+  );
+}
+```
 
-9. Branches let you work on features independently.
+### Mapping a List
+```jsx
+const items = ['Apple', 'Banana'];
+<ul>
+  {items.map(item => <li key={item}>{item}</li>)}
+</ul>
+```
 
-    List branches:
-    ```
-    git branch
-    ```
+### Using State
+```jsx
+import { useState } from 'react';
 
-    Create a new branch (working directory):
-    ``` git branch <branch-name>```
+function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      count is {count}
+    </button>
+  );
+}
+```
 
-    Switch to a branch:
-    ```git checkout <branch-name>```
+### Handling Events
+```jsx
+function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      count is {count}
+    </button>
+  );
+}
+```
 
-    Add the branch to github:
-    ```
-    git push --set-upstream origin <branch-name>
-    ```
+---
 
-10. Merging branches
-
-    In order to merge a branch, checkout to the directory in which you want to merge <branch-name> and run the command.
-
-    ```
-    git merge <branch-name>
-    ```
-
-    This opens a file in which you can make changes to the commit message. Once you close the file, a merge request is created. The continue with pushing to see changes on github.
-
-# REACT JS
-
-## SETUP
-
-1. Download Node.js from [Nodejs](https://nodejs.org/en/download)
-
-    Run the following commands:
-
-    ```
-    npm create vite@latest my-app --template react
-    cd my-app
-    ```
-
-    After you do this, I want you to create your github repository for storing this project. (HINT: use ```git init```)
-
-    ```
-    npm install
-    npm run dev
-    ```
-
-    Create a .gitignore file
-
-    And write
-    
-    ```
-    /node-modules
-    ```
-
-## Basics of React Js
-
-1. JSX – React Syntax
-
-    JSX looks like HTML but is JavaScript:
-
-    ```
-    const element = <h1>Hello, world!</h1>;
-    ```
-
-    Embed JS expressions with {}:
-
-    ```
-    <p>
-    {user.name}
-    </p>
-    ```
-
-    Render lists with .map():
-    ```
-    # This is the list
-    const items = ['Apple', 'Banana'];
-
-    # Printing like an unordered list.
-    <ul>
-    {items.map(item => <li key={item}>{item}</li>)}
-    </ul>
-    ```
-
-2. Components
-
-   Components are JavaScript functions that return JSX:
-    
-    ```
-    function Welcome(props) {
-    return <h1>Hello, {props.name}</h1>;
-    }
-    ```
-
-    props are inputs for components (like function arguments).
-
+## Feedback
+Please share your feedback to help us improve future workshops!
