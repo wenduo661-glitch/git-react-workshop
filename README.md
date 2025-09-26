@@ -1,6 +1,8 @@
-# WICS Git Workshop
+# WICS Git + ReactJS Workshop
 
-## SETUP
+## GIT
+
+### SETUP
 
 Firstly, we will set up git on our laptop.
 
@@ -29,7 +31,7 @@ There are two ways you can create your first repository.
     git init
     ```
 
-    - Start from scratch by creating a repo on github and clone it.
+Start from scratch by creating a repo on github and clone it.
 
     ``` 
     git clone
@@ -113,9 +115,75 @@ git push
 9. Merging branches
 
 In order to merge a branch, checkout to the directory in which you want to merge <branch-name> and run the command.
-    
+
     ```
     git merge <branch-name>
     ```
 
 This opens a file in which you can make changes to the commit message. Once you close the file, a merge request is created. The continue with pushing to see changes on github.
+
+## REACT JS
+
+### SETUP
+
+1. Download Node.js from https://nodejs.org/en/download
+
+Run the following commands:
+
+```
+npm create vite@latest my-app --template react
+cd my-app
+```
+
+After you do this, I want you to create your github repository for storing this project. (HINT: use ```git init```)
+
+```
+npm install
+npm run dev
+```
+
+Create a .gitignore file
+
+And write /node-modules
+
+### Basics of React Js
+
+1. JSX – React Syntax
+
+JSX looks like HTML but is JavaScript:
+
+```
+const element = <h1>Hello, world!</h1>;
+```
+
+Embed JS expressions with {}:
+
+```
+<p>
+{user.name}
+</p>
+```
+
+Render lists with .map():
+```
+# This is the list
+const items = ['Apple', 'Banana'];
+
+# Printing like an unordered list.
+<ul>
+  {items.map(item => <li key={item}>{item}</li>)}
+</ul>
+```
+
+2. Components
+
+   Components are JavaScript functions that return JSX:
+   
+```
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+props are inputs for components (like function arguments).
+
