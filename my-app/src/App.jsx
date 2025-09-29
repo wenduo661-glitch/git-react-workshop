@@ -1,7 +1,8 @@
 import React from "react";
-import Card from "./components/card";
 import "./App.css"
 import cardsData from "./assets/cardsData";
+
+import Card from "./components/card";
 import Contact from "./components/contact";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
@@ -10,7 +11,7 @@ function App() {
   
   return (
     <>
-
+      
       <Navbar />
 
       <Home />
