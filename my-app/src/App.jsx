@@ -20,6 +20,11 @@ function App() {
           />
         ))}
       </div>
+
+      <div className="contact">
+              <contact />
+
+      </div>
     </>
   );
 

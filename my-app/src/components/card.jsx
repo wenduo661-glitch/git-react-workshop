@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Card.css";
+import '../styles/card.css'
 
 export default function Card({ image, title, description }) {
   const [expanded, setExpanded] = useState(false);
