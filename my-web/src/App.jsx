@@ -8,6 +8,9 @@ function App() {
 
   return (
     <>
+
+      /* Add components here */
+
       <h1> Projects</h1>
       <div className="projects">
 
@@ -21,6 +24,9 @@ function App() {
           />
         ))}
       </div>
+
+      /* Add components here */
+
     </>
   );
 

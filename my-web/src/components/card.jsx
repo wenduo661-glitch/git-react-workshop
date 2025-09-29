@@ -23,11 +23,8 @@ export default function Card({ image, title, description, link }) {
           {expanded ? "Show Less" : "Read More"}
         </button>
 
-        <button className="card__button"
-          onClick={() => window.open(link, "_blank")}>
-          Github
-        </button>
-
+        /*Add button here*/
+        
       </div>
     </div>
     </>

@@ -9,8 +9,7 @@ Welcome to the **Personal Website Workshop**! This README will guide you through
 - [Node.js Check](#nodejs-check)
 - [Setting Up a React Project](#setting-up-a-react-project)
 - [React Concepts](#react-concepts)
-- [Feedback](#feedback)
-
+- [How to find react libraries](#how-to-find-local-libraries)
 ---
 
 ## React.js Introduction
@@ -93,12 +92,15 @@ function Counter() {
 }
 ```
 
-### How to find local libraries
+### How to find react libraries
 
 I want to acheive a typewrite effect.
 
 Visit [node package manager](https://www.npmjs.com/) and look for the library that can help you do this.
 
-```
+In this project, I want to use to typewriter effect so I run the following command to install it.
+
+```bash
 npm install react-simple-typewriter
 ```
+

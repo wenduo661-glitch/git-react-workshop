@@ -11,7 +11,8 @@ function App() {
   
   return (
     <>
-      <Navbar />
+    
+    <Navbar />
       
     <section id="home">
         <Home />
