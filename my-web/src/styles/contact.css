@@ -33,6 +33,8 @@
 
 .social-links {
   margin-top: 15px;
+  margin-bottom: 50px;
+
 }
 
 .social-links a {
@@ -46,11 +48,6 @@
   color: #ffffff;
 }
 
-.footer-bottom {
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: #aaaaaa;
-}
 
 /* Responsive */
 @media (max-width: 600px) {

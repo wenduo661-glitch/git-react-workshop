@@ -5,8 +5,10 @@ import "../styles/home.css"
 export default function Home() {
   return (
     
-    <section id="home" className="home-section">
+    <section className="home-section">
+
       <div className="hero-content">
+
         <h1>Hello, I’m <span className="highlight">Kandisa Agarwal</span></h1>
 
         <h2>
@@ -21,10 +23,10 @@ export default function Home() {
               ]}
               loop
               cursor
-              cursorStyle="|"
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1500}
+              cursorColor="blue"
             />
           </span>
         </h2>
@@ -35,13 +37,14 @@ export default function Home() {
         </p>
 
         <button
-          className="cta-btn"
+          className="view_button"
           onClick={() =>
             document.getElementById("projects").scrollIntoView({ behavior: "smooth" })
           }
         >
-          View My Projects ↓
+          View My Projects
         </button>
+
       </div>
     </section>
   );
