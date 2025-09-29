@@ -93,5 +93,12 @@ function Counter() {
 }
 ```
 
+### How to find local libraries
 
+I want to acheive a typewrite effect.
+
+Visit [node package manager](https://www.npmjs.com/) and look for the library that can help you do this.
+
+```
 npm install react-simple-typewriter
+```
