@@ -8,9 +8,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="nav-logo">Kandisa Agarwal</div>
+      <div 
+      className="nav-logo"
+      onClick={() => scrollToSection("home")}>
+        Kandisa Agarwal
+      </div>
       <ul className="nav-links">
-        <li onClick={() => scrollToSection("home")}>Home</li>
         <li onClick={() => scrollToSection("projects")}>Projects</li>
         <li onClick={() => scrollToSection("contact")}>Contact</li>
         <li onClick={() => window.open("/resume.pdf", "_blank")}>Resume</li>

@@ -5,7 +5,7 @@ import "../styles/home.css"
 export default function Home() {
   return (
     
-    <section id="home" className="section home-section">
+    <section id="home" className="home-section">
       <div className="hero-content">
         <h1>Hello, I’m <span className="highlight">Kandisa Agarwal</span></h1>
 
@@ -40,7 +40,7 @@ export default function Home() {
             document.getElementById("projects").scrollIntoView({ behavior: "smooth" })
           }
         >
-          View My Work ↓
+          View My Projects ↓
         </button>
       </div>
     </section>
