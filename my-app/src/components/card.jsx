@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../styles/card.css'
 
-export default function Card({ image, title, description }) {
+export default function Card({ image, title, description, link }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -21,6 +21,10 @@ export default function Card({ image, title, description }) {
           onClick={() => setExpanded(!expanded)}
         >
           {expanded ? "Show Less" : "Read More"}
+        </button>
+        <button className="card__button"
+          onClick={() => window.open(link, "_blank", "noopener,noreferrer")}>
+          Github
         </button>
       </div>
     </div>

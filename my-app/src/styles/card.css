@@ -44,6 +44,7 @@
   cursor: pointer;
   font-size: 0.9rem;
   transition: background 0.3s ease;
+  margin-right: 10px;
 }
 
 .card__button:hover {
