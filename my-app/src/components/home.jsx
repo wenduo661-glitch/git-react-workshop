@@ -4,6 +4,7 @@ import "../styles/home.css"
 
 export default function Home() {
   return (
+    
     <section id="home" className="section home-section">
       <div className="hero-content">
         <h1>Hello, I’m <span className="highlight">Kandisa Agarwal</span></h1>

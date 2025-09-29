@@ -10,12 +10,10 @@ function App() {
   
   return (
     <>
-    <Navbar />
 
-    <div>
+      <Navbar />
+
       <Home />
-    </div>
-
 
     <section id="projects">
 
