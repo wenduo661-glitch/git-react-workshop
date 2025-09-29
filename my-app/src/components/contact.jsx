@@ -3,9 +3,11 @@ import "../styles/contact.css";
 
 const Contact = () => {
   return (
-    <footer className="contact-footer">
+    <section className="contact-footer">
+      <br/>
+      <br/>
+      <br/>
       <div className="footer-content">
-        <h3>Kandisa Agarwal</h3>
         <p>Have a project or just want to say hi? Let’s connect!</p>
         <a className="email-link" href="mailto:kandisa@example.com">
           kandisa@example.com
@@ -17,7 +19,7 @@ const Contact = () => {
         </div>
       </div>
       <p className="footer-bottom">© {new Date().getFullYear()} Kandisa Agarwal. All rights reserved.</p>
-    </footer>
+    </section>
   );
 };
 
