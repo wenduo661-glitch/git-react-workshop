@@ -52,49 +52,6 @@ function Welcome(props) {
 }
 ```
 
-### Mapping a List
-
-Way of looping through the list/array.
-
-```jsx
-const items = ['Apple', 'Banana'];
-<ul>
-  {items.map(item => <li key={item}>{item}</li>)}
-</ul>
-```
-
-### Using State
-
-Storing the current state of the page so enable dynamic user interaction.
-
-```jsx
-import { useState } from 'react';
-
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      count is {count}
-    </button>
-  );
-}
-```
-
-### Handling Events
-
-Define action we want to take in case of a state change.
-
-```jsx
-function Counter() {
-  const [count, setCount] = useState(0);
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      count is {count}
-    </button>
-  );
-}
-```
 
 ### How to find react libraries
 
